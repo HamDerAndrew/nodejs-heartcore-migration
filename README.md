@@ -1,5 +1,12 @@
 # NodeJs Heartcore Content Migration
 
+### To run this code
+At the root of the folder, perform the following steps:
+1. Run this command to install node modules: `npm i`
+2. Run this command to compile the code: `npx tsc index.ts`
+3. Run this command to execute the code: `node index.js`
+
+
 ### Description of task
 
 
@@ -28,7 +35,7 @@
 
 - The structure ↓
    - ![image](https://github.com/user-attachments/assets/b4d17bd8-ba88-40ea-8732-592355448cb4)
-4. Create a content node populated automatically using the [Heartcore Client Library](https://github.com/umbraco/Umbraco.Headless.Client.Net) or if not using C# [Heartcore API Docs](https://docs.umbraco.com/umbraco-heartcore/api-documentation/api-documentation) and the [api.tvmaze.com](https://www.tvmaze.com/api)
+4. Create a content node populated automatically using the [Heartcore Client Library](https://github.com/umbraco/Umbraco.Headless.Client.Net). If you are not using C#, use the [Heartcore API Docs](https://docs.umbraco.com/umbraco-heartcore/api-documentation/api-documentation) and the [api.tvmaze.com](https://www.tvmaze.com/api) with your prefered language.
 5.  If a show exists with an ID do the following ↓
 - Update Existing Property:
    - If the property already exists in Heartcore but is empty, check if TVMAZE has a value for it. If it does, update the property in Heartcore with the value from TVMAZE.
