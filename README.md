@@ -1,6 +1,7 @@
 # NodeJs Heartcore Content Migration
 
 ### To run this code
+Have NodeJs version 20 or above installed on your machine.
 At the root of the folder, perform the following steps:
 1. Run this command to install node modules: `npm i`
 2. Run this command to compile the code: `npx tsc index.ts`
