@@ -26,7 +26,6 @@ async function mainFunc() {
                 throw new Error(`HTTP Error! Status: ${response.status}`)
             }
             
-            // The object with all the shows. We call it data for now and deserialize it to json
             const data: TVShow[] = await response.json()
     
             if(data.length != 0) {
@@ -53,5 +52,5 @@ async function mainFunc() {
 const start = performance.now();
 mainFunc().then(() => {
   const end = performance.now();
-  console.log(`Execution time: ${end - start} milliseconds`);
+  console.log(`Execution time: ${Math.floor(end - start)} milliseconds`);
 });
