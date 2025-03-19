@@ -48,9 +48,27 @@ async function mainFunc() {
     console.log(tvShowMap.size)
 }
 
-// Wrap in a promise to use the Performance module to measure execution time.
+async function uploadShowToMyHeartcoreProject(show?: TvMazeShow) {
+    /*
+	 * if it exists, make sure if a specific property in Heartcore does not have a value but has a value from TVMAZE then update the property.
+	 * if it does not exist, make sure to download the images to the media section and reference it to a corresponding content node that you create.
+	 */
+    return false
+}
+
+// Wrap in a promise to use the Performance module to measure execution time of "download" and "upload".
 const start = performance.now();
 mainFunc().then(() => {
   const end = performance.now();
-  console.log(`Execution time: ${Math.floor(end - start)} milliseconds`);
+  console.log(`Execution download time: ${Math.floor(end - start)} milliseconds`);
+})
+.then(() => {
+    const uploadStart = performance.now();
+    uploadShowToMyHeartcoreProject().then(() => {
+      const uploadEnd = performance.now();
+      console.log(`Execution upload time: ${Math.floor(uploadEnd - uploadStart)} milliseconds`);
+    });
 });
+
+
+
