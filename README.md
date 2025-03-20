@@ -36,9 +36,14 @@ At the root of the folder, perform the following steps:
 
 - The structure ↓
    - ![image](https://github.com/user-attachments/assets/b4d17bd8-ba88-40ea-8732-592355448cb4)
-4. Create a content node populated automatically using the [Heartcore Client Library](https://github.com/umbraco/Umbraco.Headless.Client.Net). If you are not using C#, use the [Heartcore API Docs](https://docs.umbraco.com/umbraco-heartcore/api-documentation/api-documentation) and the [api.tvmaze.com](https://www.tvmaze.com/api) with your prefered language.
+4. Use the [Heartcore API Docs](https://docs.umbraco.com/umbraco-heartcore/api-documentation/api-documentation) and the [api.tvmaze.com](https://www.tvmaze.com/api) to create a content node that is populated with the TV Shows automatically.
+An example of how that could look would be like so: \
+![Screenshot 2025-03-20 at 13 01 11](https://github.com/user-attachments/assets/d7ba3a2f-4682-4fe0-be3b-8ff24b2af536)
+
+
 5.  If a show exists with an ID do the following ↓
 - Update Existing Property:
    - If the property already exists in Heartcore but is empty, check if TVMAZE has a value for it. If it does, update the property in Heartcore with the value from TVMAZE.
 - Create New Content with Media:
    - If the property doesn't exist in Heartcore, download the images from TVMAZE, save them to the media section in Heartcore, and link them to a new content node you create.
+
